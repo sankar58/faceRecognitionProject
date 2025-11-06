@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition Web App</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+          crossorigin="anonymous">
+
+    <style>
+        .navbar-custom {
+            background-color: #cb997e;
+        }
+        .navbar-custom .nav-link,
+        .navbar-custom .navbar-brand {
+            color: white !important;
+            font-weight: 500;
+        }
+        .navbar-custom .nav-link:hover {
+            text-decoration: underline;
+        }
+        .navbar-brand img {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container d-flex align-items-center">
+            <!-- ✅ Logo first, then text -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="{{ url_for('static', filename='images/logo.svg') }}" 
+                     alt="Logo" width="75" class="img-fluid me-2">
+                Face Recognition
+            </a>
+
+            <div class="collapse navbar-collapse show" id="navbarNav">
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/app/">App</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    {% block bodyblock %}
+    {% endblock %}
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+            crossorigin="anonymous"></script>
+</body>
+</html>

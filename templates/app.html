@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block bodyblock %}
+
+<div class="container text-center py-5">
+    <h3 class="mb-4">Face Recognition Application</h3>
+
+    <p class="text-muted">
+        Gender classification: this app is powered by machine learning.  
+        Once the user uploads an image, the system automatically converts it to grayscale,  
+        crops the face, and sends it to the trained model for prediction —  
+        all seamlessly integrated into this Flask web application.
+    </p>
+
+    <!-- ✅ Correct way to load image in Flask -->
+    <img src="{{ url_for('static', filename='images/002.PNG') }}" 
+         alt="Face Recognition Example" 
+         class="img-fluid my-4 rounded shadow-sm" width="500">
+
+    <div>
+        <a class="btn btn-outline-primary" href="/app/gender/">Gender App</a>
+    </div>
+</div>
+
+{% endblock %}
