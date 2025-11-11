@@ -1,0 +1,6 @@
+[build]
+  command = "pip install -r requirements.txt && gunicorn main:app"
+  publish = "."
+
+[build.environment]
+  PYTHON_VERSION = "3.11"
