@@ -1,6 +1,6 @@
 Flask
 gunicorn
-numpy
+numpy<2
 opencv-python
 face_recognition
 scikit-learn
