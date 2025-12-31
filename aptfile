@@ -2,3 +2,4 @@ libsm6
 libxrender1
 libfontconfig1
 libbice6
+cmake

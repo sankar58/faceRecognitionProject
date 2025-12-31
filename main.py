@@ -1,13 +1,15 @@
+import os
 from flask import Flask
 from app import views
-app=Flask(__name__)
 
+app = Flask(__name__)
 
-app.add_url_rule(rule='/',endpoint='home',view_func=views.index)
-app.add_url_rule(rule='/app/',endpoint='app',view_func=views.app)
-app.add_url_rule(rule='/app/gender/',endpoint='gender',view_func=views.genderApp,methods=['GET','POST'])
+app.add_url_rule('/', 'home', views.index)
+app.add_url_rule('/app/', 'app', views.app)
+app.add_url_rule('/app/gender/', 'gender',
+                 views.genderApp, methods=['GET', 'POST'])
 
-
-
-if __name__=="__main__":
-    app.run(debug=True)
+# DO NOT enable debug in production
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
