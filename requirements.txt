@@ -1,6 +1,6 @@
-Flask
-gunicorn
-numpy<2
-opencv-python
-face_recognition
-scikit-learn
+flask
+face-recognition
+dlib
+opencv-python-headless
+numpy
+pillow
