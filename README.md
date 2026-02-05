@@ -136,25 +136,25 @@ http://127.0.0.1:5000/
 
 ### 🔹 Home Page
 
-![Home Page](screenshots/home_page.png)
+![Home Page](Screenshots/home_page.png)
 
 ---
 
 ### 🔹 Application Overview Page
 
-![Application Page](screenshots/application_page.png)
+![Application Page](Screenshots/application_page.png)
 
 ---
 
 ### 🔹 Image Upload Interface
 
-![Upload Page](screenshots/upload_page.png)
+![Upload Page](Screenshots/upload_page.png)
 
 ---
 
 ### 🔹 Gender Prediction Output
 
-![Prediction Output](screenshots/prediction_output.png)
+![Prediction Output](Screenshots/prediction_output.png)
 
 ---
 ## 📊 Model Details
@@ -206,28 +206,6 @@ http://127.0.0.1:5000/
 - Docker Deployment
 - Cloud Hosting
 
----
-
-## 📸 Adding Execution Screenshots
-
-Step 1 → Create folder:
-
-```
-screenshots/
-```
-
-Step 2 → Add images:
-
-```
-screenshots/input1.jpg
-screenshots/output1.jpg
-screenshots/output_multiple.jpg
-```
-
-Step 3 → Push to GitHub  
-Images automatically appear in README.
-
----
 
 ## 👨‍💻 Author
 
